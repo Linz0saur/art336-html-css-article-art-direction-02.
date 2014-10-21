@@ -9,9 +9,12 @@ html {
 *, *:before, *:after {
     box-sizing: inherit;
 }
+ 
 
 body {
-    background-color: #e67b39;
+    background-image: url('blood.jpg');
+    background-repeat: repeat;
+    background-attachment: fixed;
     margin: 0 auto;
     @include body-font-regular;
     @include fontSize(18px);
@@ -29,7 +32,7 @@ img {
     height: auto;
     max-width: 100%;
     margin: 0 0 0 0;
-    padding: 40px 0;
+    padding: 0;
 }
 
 figure {
@@ -44,13 +47,13 @@ figcaption {
 //start nav styling
 
 nav {
-    background-color:#dfd7e3;
+    background-color:#ad0b0b;
     border: 1px solid $background-color;
     //border-radius: 6px;
-    border-bottom-left-radius: 6px; 
-    border-bottom-left-radius:  6px;
+    border-bottom-left-radius: 5px; 
+    border-bottom-left-radius:  5px;
     border-top: none;
-    margin-left: 10px;
+    margin-left: 450px;
     padding: 4px 10px 6px 10px;
     position: fixed;
 }
@@ -61,8 +64,8 @@ nav ul {
 }
 
 nav ul li {
-    display: inline-block;
-    margin: 0 6px 0 0;
+    display: inline-grid;
+    margin: 0 8px 0 0;
     padding: 0;
 
 }
@@ -74,13 +77,13 @@ nav ul li:last-of-type {
 }
 
 a{
-    color: $color;
+    color: #fff;
     @include body-font-bold;
     transition: color 350ms linear;
 }
 
 a:hover {
-    color: lighten($color,20%);
+    color: darken($color,40%);
     @include body-font-bold;
     transition: color 350ms linear;
 }
@@ -96,9 +99,7 @@ h1, h2, h3 {
 header h1 {
     @include fontSize(75px);
     text-align: center
-    margin: 0;
-   
-}
+     }
 
 article h1 {
     color: $color-title;
@@ -127,10 +128,10 @@ main footer p {
     margin: 0;
 }
 
-footer[role="contentinfo"] small {
+footer[role="contentinfo"] medium {
     border-top: 1px #0d0c0c solid;
-    display: block;
+    display: inline-block;
     @include fontSize(16px);
-    margin-bottom: 20px;
+    margin-bottom: 600px;
 }
 
