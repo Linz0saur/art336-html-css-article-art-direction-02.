@@ -36,6 +36,11 @@ img {
     padding: 0;
 }
 
+h3  {
+    opacity: .8;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
 figure {
     margin: 0;
     padding: 0;
@@ -48,13 +53,13 @@ figcaption {
 //start nav styling
 
 nav {
-    background-color:#ad0b0b;
-    border: 1px solid $background-color;
+    background-color:#fff;
+    border: 2px $background-color;
     //border-radius: 6px;
     border-bottom-left-radius: 5px; 
     border-bottom-left-radius:  5px;
     border-top: none;
-    margin-left: 450px;
+    margin-left: 500px;
     padding: 4px 10px 6px 10px;
     position: fixed;
 }
@@ -78,7 +83,7 @@ nav ul li:last-of-type {
 }
 
 a{
-    color: #fff;
+    color: #8d0202;
     @include body-font-bold;
     transition: color 350ms linear;
 }
@@ -98,13 +103,13 @@ h1, h2, h3 {
 }
 
 header h1 {
-    @include fontSize(75px);
+    @include fontSize(80px);
     text-align: center
      }
 
 article h1 {
     color: $color-title;
-    @include fontSize(66px);
+    @include fontSize(70px);
     margin: 48px 0 48px 0;
     text-transform: capitalize;
 }
@@ -134,5 +139,8 @@ footer[role="contentinfo"] medium {
     display: inline-block;
     @include fontSize(16px);
     margin-bottom: 600px;
+}
+h2,h3 {
+    text-align: center
 }
 

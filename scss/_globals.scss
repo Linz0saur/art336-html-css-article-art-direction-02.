@@ -16,44 +16,55 @@ Globals
 }
 
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Anton';
   font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Slab Light'), local('RobotoSlab-Light'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJfR_54zmj3SbGZQh3vCOwvY.woff) format('woff');
+  font-weight: 400;
+  src: local('Anton'), url(http://fonts.gstatic.com/s/anton/v6/4ccCHjovctZoFjdBOHBY_6CWcynf_cDxXwCLxiixG1c.woff) format('woff');
 }
 @font-face {
-  font-family: 'Roboto Slab';
+  font-family: 'Sanchez';
   font-style: normal;
-  font-weight: 700;
-  src: local('Roboto Slab Bold'), local('RobotoSlab-Bold'), url(http://fonts.gstatic.com/s/robotoslab/v6/dazS1PrQQuCxC3iOAJFEJRbnBKKEOwRKgsHDreGcocg.woff) format('woff');
+  font-weight: 400;
+  src: local('Sanchez'), local('Sanchez-Regular'), url(http://fonts.gstatic.com/s/sanchez/v4/9T6om-IyqE2CuKLLQr0lcgLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
 }
 @font-face {
-  font-family: 'Yanone Kaffeesatz';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Yanone Kaffeesatz Bold'), local('YanoneKaffeesatz-Bold'), url(http://fonts.gstatic.com/s/yanonekaffeesatz/v7/We_iSDqttE3etzfdfhuPRbJjSLMfVFmTspsxH0yGxjj3rGVtsTkPsbDajuO5ueQw.woff) format('woff');
+  font-family: 'Sanchez';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Sanchez Italic'), local('Sanchez-Italic'), url(http://fonts.gstatic.com/s/sanchez/v4/HsmMg_Kwn-sTuZvQJORnl7O3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
 }
+
+@font-face {
+  font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Coming Soon'), local('ComingSoon'), url(http://fonts.gstatic.com/s/comingsoon/v6/myblyOycMnPMGjfPG-DzP7rIa-7acMAeDBVuclsi6Gc.woff) format('woff');
+}
+
+
+ 
 
 
 @mixin body-font-regular {
-    font-family: 'Roboto Slab', georgia, serif;
-    font-style: normal;
-    font-weight: 300;
+   font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
 }
 
 @mixin body-font-bold {
-    font-family: 'Yanone Kaffeesatz', georgia, serif;
-    font-style: normal;
-    font-weight: normal;
-    font-weight: 700;
+     font-family: 'Coming Soon';
+  font-style: normal;
+  font-weight: 400;
+    
 }
 
 @mixin headline-font {
-    font-family: 'Yanone Kaffeesatz', helevetica, verdana, sans-serif;
-    font-style: normal;
-    font-weight:700; 
+   font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
 }
-
+    
+  
 //site variables
 $background-color: #e6e3e3;
 $color: #242424;
