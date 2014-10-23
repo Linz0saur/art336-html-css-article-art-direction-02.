@@ -10,11 +10,11 @@ html {
     box-sizing: inherit;
 }
  
-
 body {
-    background-image: url('blood.jpg');
-    background-repeat: repeat;
-    background-attachment: fixed;
+    
+    background: url('../img/blood.png') repeat center center;
+    background-size: cover;
+    height: 100px;
     margin: 0 auto;
     @include body-font-regular;
     @include fontSize(18px);
@@ -23,6 +23,7 @@ body {
     max-width: 500px;
     width: 100%;
 }
+
 
  main, footer[role-"contentinfo"] {
     padding: 0 10px; 
